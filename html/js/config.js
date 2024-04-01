@@ -1,0 +1,1 @@
+const chatBotServiceUrl = '****** Do not edit this line manually - it will be updated by CDK deployment script ******';

@@ -1,0 +1,25 @@
+🚀 AWS Accelerator: AI Chatbot Series - #1 <> Utilizing RAG Concepts
+
+🌟 Exclusive AWS Sacramento Accelerator Series! 🌟
+Join AWS Sacramento for a groundbreaking workshop: "AI Chatbot Series - Part 1: Utilizing RAG Concepts".
+
+📢 Presented By: Dmytro Yeskin
+
+🏁 Hands-On Accelerator: Embark on a journey into the future of AI with us on Thursday, April 11, 2024, at The Ice Blocks. Here, you'll have the opportunity to delve into advanced concepts for creating platform-independent AI Chatbots with Retrieval-Augmented Generation (RAG). At this workshop, Solutions Architect Dmytro Yeskin will elucidate what RAG entails and how it can enhance the quality of LLM responses. For instructional purposes, we'll deploy and scrutinize a streaming Chatbot implementation built from scratch in Node.js, leveraging AWS services such as Bedrock, Lambda, and DocumentDB, and deployed using an automated CDK script.
+
+🤖 For LLM models, we'll utilize the most modern and powerful Anthropic Claude 3 models currently available through the Amazon Bedrock service. Additionally, we'll discuss how this Chatbot application can be enhanced, explore other specialized Amazon tools that can aid in its improvement, and delve into integrating this application with other LLM providers such as OpenAI.
+
+⚙️ Prerequisites: If you wish to follow this workshop in real-time with your own laptop, you'll need an Amazon AWS account with approved access to Bedrock models: "Anthropic Claude 3 Sonnet" and "Amazon Titan Embedding G1 - Text". Please note that approval may take a few hours, so kindly request it prior to the workshop (requesting and obtaining access is free; charges will only be incurred based on actual resource usage).
+
+🍺🍕🪩 Network & Connect: Beyond the workshop, enjoy an informal gathering with food, drinks, and music. A perfect environment to foster connections with fellow AWS enthusiasts and professionals.
+
+🗓️ Event Details:
+
+Date: Thursday, April 11, 2024
+Time: 6:30 PM - 9:00 PM
+Venue: The Ice Blocks
+👕 Spotting Our Team: Keep an eye out for our team, dressed in AWS attire, ready to welcome you inside the building.
+
+📣 RSVP today and secure your spot for a night of learning, networking, and growth. We can't wait to see you there and explore the limitless possibilities of AI chatbots with RAG on AWS together!
+
+See you there!
