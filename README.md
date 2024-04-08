@@ -42,10 +42,10 @@ AwsAiChatbotStack.websiteDistributionUrl = https://**************.cloudfront.net
 Copy and paste this URL into the browser window.
 
 ## Manually uploading documents
-If you didn't select to upload documents at the moment of deploying, you can upload it manually in S3 to content bucket. Embed lambda function will be immediatelly triggered and documents will be converted into the embedding vectors.
+If you didn't choose to upload documents at the moment of deploying, you can upload it manually in S3 to content bucket. Embed lambda function will be immediatelly triggered and documents will be converted into the embedding vectors.
 
 ## Using monitoring EC2 instance
-If you selected to deploy monitoring EC2 instance you can connect to it via AWS Console using EC2 Instance Connect Endpoint (to connect to private IP4 address), and then run commands to connect to mongo per instructions provided at DocumentDB cluster page, but instead of `mongo` use `mongosh`. You can find connection password at AWS Secrets Manager.
+If you chose to deploy monitoring EC2 instance you can connect to it via AWS Console using EC2 Instance Connect Endpoint (to connect to private IP4 address), and then run commands to connect to mongo per instructions provided at DocumentDB cluster page, but instead of `mongo` use `mongosh`. You can find connection password at AWS Secrets Manager.
 
 ## Demo purpose note
 This application is only for demo purposes and not for production use. For production use several improvements must be done: 
