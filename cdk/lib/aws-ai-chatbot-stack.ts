@@ -128,7 +128,6 @@ export class AwsAiChatbotStack extends Stack {
       actions: ['ec2:CreateNetworkInterface', 'ec2:DescribeNetworkInterfaces', 'ec2:DeleteNetworkInterface'],
       resources: ['*'],
     });
-
     lambdaExecutionRole.addToPolicy(vpcAccessPolicy);
 
     // Creating Bedrock Access policy and add it to Lambda execution role
