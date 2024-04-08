@@ -366,16 +366,15 @@ export class AwsAiChatbotStack extends Stack {
 
       // Provisioning EC2 instance for DB querying
       const ec2Instance = new Instance(this, 'ChatBotDBMonitoringInstance', {
+        //instanceName: 'chatbot-db-monitoring-instance',
         vpc: vpc,
         role: ec2Role,
         securityGroup: securityGroup,
-        //instanceName: 'chatbot-db-monitoring-instance',
         instanceType: InstanceType.of(
           InstanceClass.T2,
           InstanceSize.MICRO
         ),
         machineImage: MachineImage.latestAmazonLinux2023({
-          //generation: AmazonLinuxGeneration.AMAZON_LINUX_2023,
           userData: ec2UserData
         }),
         //keyName: 'chatbot-db-monitoring-instance-key',
