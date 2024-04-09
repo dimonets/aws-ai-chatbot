@@ -55,8 +55,6 @@ var handler = awslambda.streamifyResponse(async (event, responseStream, context)
   if (query.length == 0)
     throw new Error(`Question is empty.`);
 
-  //const query = 'How to create alterations project with CalCERTS?';
-
   let streamContent = '';
   let contextChunk = '';
 
