@@ -20,7 +20,7 @@ let introMessageSent = false;
 // Open chat button click handler
 chatOpen.addEventListener('click', () => {
   chatWidget.classList.toggle('visible', true);
-  chatInput.focus();
+  //chatInput.focus();
 });
 
 // Close chat button click handler
@@ -70,6 +70,7 @@ function addChatMessage(sender, message) {
 // Main function to send and receive message to NodeJS service 
 async function sendChatMessage(question) {
 
+  // Forming payload
   var payload = {
     q: question,
     u: userId,
