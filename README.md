@@ -50,4 +50,4 @@ If you chose to deploy monitoring EC2 instance you can connect to it via AWS Con
 ## Demo purpose note
 This application is only for demo purposes and not for production use. For production use several improvements must be done: 
 - on AWS level: use separate AWS roles and separate security groups, consider having lambda step functions for main service, add WAF with CloudFront, add Amazon Textract for PDF files processing etc
-- on application level: improve error handling, add security hash to prevent unauthorized use, provide a history as context, supply more than one context chunk, add security guardrails into prompts etc.
+- on application level: improve error handling, add security hash to prevent unauthorized use, provide a history as context, add filtering by similarity score, supply more than one context chunk, add security guardrails into prompts etc.
