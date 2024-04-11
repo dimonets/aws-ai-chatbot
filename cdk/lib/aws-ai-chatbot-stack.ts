@@ -305,7 +305,8 @@ export class AwsAiChatbotStack extends Stack {
       responseHeadersPolicyName: 'ChatBotLambdaDistributionPolicy',
       corsBehavior: {
         accessControlAllowCredentials: false,
-        accessControlAllowHeaders: ['*'],
+        //accessControlAllowHeaders: ['*'],
+        accessControlAllowHeaders: ['Content-Type', 'Accept'],
         accessControlAllowMethods: ['GET', 'POST'],
         accessControlAllowOrigins: [`https://${websiteDistribution.domainName}`],
         originOverride: true,
