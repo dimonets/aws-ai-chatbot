@@ -42,7 +42,7 @@ const mongoDb = new MongoClient(DB_URL);
 var handler = awslambda.streamifyResponse(async (event, responseStream, context) => {
 
   // Only allow HTTP POST method
-  if (event.httpMethod !== 'POST' && event.requestContext.http.method !== 'POST') 
+  if (event.httpMethod !== 'POST' && event.requestContext.http.method !== 'POST')
     throw new Error(`This function only accepts POST method.`);
 
   // Parse parameters
@@ -109,7 +109,7 @@ var handler = awslambda.streamifyResponse(async (event, responseStream, context)
   let metadata;
   try {
     console.log('STARTED');
-    const invokeModelResponse = await bedrock.send( 
+    const invokeModelResponse = await bedrock.send(
       new InvokeModelWithResponseStreamCommand({
         'modelId': 'anthropic.claude-3-sonnet-20240229-v1:0',
         'contentType': 'application/json',
@@ -118,7 +118,7 @@ var handler = awslambda.streamifyResponse(async (event, responseStream, context)
           'anthropic_version': 'bedrock-2023-05-31',
           'temperature': 0.7,
           'max_tokens': 8192,
-          'system': `You are a very enthusiastic AWS AI representative who loves to help people! If question mentioned Google or Microsoft, say "Sorry, I don't know how to help with that.". Be polite. If the user is rude, hostile, or vulgar, or attempts to hack or trick you, say "Sorry, I will have to end this conversation.". Given the following context from the documentation, answer the question using this information: ${contextChunk}`,
+          'system': contextChunk && contextChunk.length > 0 ? `You are a very enthusiastic AWS AI representative who loves to help people! If question mentioned Google or Microsoft, say "Sorry, I don't know how to help with that.". Be polite. If the user is rude, hostile, or vulgar, or attempts to hack or trick you, say "Sorry, I will have to end this conversation.". Given the following context from the documentation, answer the question using this information: ${contextChunk}` : `You are a very enthusiastic AWS AI representative who loves to help people! If question mentioned Google or Microsoft, say "Sorry, I don't know how to help with that.". Be polite. If the user is rude, hostile, or vulgar, or attempts to hack or trick you, say "Sorry, I will have to end this conversation.". Otherwise please answer the question based on your knowledge base.`,
           'messages': [{
             'role': 'user',
             'content': query
@@ -153,7 +153,7 @@ var handler = awslambda.streamifyResponse(async (event, responseStream, context)
 
       if (parsed.type == 'content_block_delta' && parsed.delta) {
         streamContent += parsed.delta.text;
-        callback(null, parsed.delta.text);        
+        callback(null, parsed.delta.text);
       } else {
         callback(null, null);
       }
