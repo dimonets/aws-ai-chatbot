@@ -2,6 +2,8 @@
 
 This is a test project for AWS AI ChatBot development with RAG using Bedrock, Lambda, DocumentDB.
 
+Presentation PDF file from AWS event is uploaded tothe root of repository.
+
 ## Prerequisites
 
 Amazon AWS account with activated access to models in AWS Bedrock service:
@@ -35,6 +37,10 @@ Possible parameters for deploying:
 Sample commands with extra parameters:
 * `npx cdk synth -c upload-documents=true -c deploy-instance=true` 
 * `npx cdk deploy -c upload-documents=true -c deploy-instance=true`
+
+## Destroy command
+After you are done with this demo, don't forget to remove all deployed infranstructure, by running command:
+* `npx cdk destroy` 
 
 ## Run application in browser
 After successfull deployment with `npx cdk deploy` there will be an output like:
