@@ -2,7 +2,7 @@
 
 This is a test project for AWS AI ChatBot development with RAG using Bedrock, Lambda, DocumentDB.
 
-Presentation PDF file from AWS event is uploaded tothe root of repository.
+Presentation PDF file from AWS event is uploaded to the root of repository.
 
 ## Prerequisites
 
